@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navigate, BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import { ROUTE_PATH } from "./constants/routes";
+import HomePage from "./pages/HomePage/HomePage";
+import CatalogPage from "./pages/CatalogPage/CatalogPage";
+import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
+import SharedLayout from "./components/SharedLayout/SharedLayout";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path={ROUTE_PATH.home} element={<SharedLayout />}>
+          <Route path={ROUTE_PATH.home} element={<HomePage />} />
+          <Route path={ROUTE_PATH.catalog} element={<CatalogPage />} />
+          <Route path={ROUTE_PATH.favorites} element={<FavoritesPage />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
