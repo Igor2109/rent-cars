@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <nav>
-        <ul className="header-list">
+        <ul className="header-list list">
           <li>
             <NavLink className="header" to="/">
               Main

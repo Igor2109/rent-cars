@@ -26,5 +26,17 @@ export const StyledHeader = styled.header`
       color: white;
       border-radius: 10px;
     }
+
+    &:hover {
+      box-shadow: 0px 4px 14px 0px rgba(64, 123, 255, 0.54);
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+    &:disabled {
+      background-color: grey;
+      cursor: not-allowed;
+    }
   }
 `;

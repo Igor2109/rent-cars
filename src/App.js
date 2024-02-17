@@ -1,4 +1,4 @@
-import { Navigate, BrowserRouter as Router } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import { ROUTE_PATH } from "./constants/routes";
 import HomePage from "./pages/HomePage/HomePage";
@@ -8,16 +8,14 @@ import SharedLayout from "./components/SharedLayout/SharedLayout";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path={ROUTE_PATH.home} element={<SharedLayout />}>
-          <Route path={ROUTE_PATH.home} element={<HomePage />} />
-          <Route path={ROUTE_PATH.catalog} element={<CatalogPage />} />
-          <Route path={ROUTE_PATH.favorites} element={<FavoritesPage />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Route>
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path={ROUTE_PATH.home} element={<SharedLayout />}>
+        <Route path={ROUTE_PATH.home} element={<HomePage />} />
+        <Route path={ROUTE_PATH.catalog} element={<CatalogPage />} />
+        <Route path={ROUTE_PATH.favorites} element={<FavoritesPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Route>
+    </Routes>
   );
 }
 
