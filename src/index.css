@@ -18,9 +18,6 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* background-image: url("./assets/images/1701840650_sportishka-com-p-avtomobil-na-chernom-fone-oboi-40.jpg"); */
-  /* background-image: url("./assets/images/close-up-sales-manager-black-suit-selling-car-customer.jpg"); */
 }
 
 code {
@@ -64,6 +61,7 @@ img {
 
 .link {
   text-decoration: none;
+  color: rgb(50, 32, 19);
 }
 .container {
   width: 100%;

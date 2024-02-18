@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import ModalButtonRentalCar from "../../components/ModalButtonRentalCar/ModalButtonRentalCar";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCars, selectFavCarsIds } from "../../redux/carSlice.selector";
 import { fetchCars } from "../../redux/carSlice";
@@ -25,7 +24,6 @@ const FavoritePage = () => {
           return <Card key={car.id} {...car} />;
         })}
       </CatalogWrapper>
-      <ModalButtonRentalCar />
     </div>
   );
 };

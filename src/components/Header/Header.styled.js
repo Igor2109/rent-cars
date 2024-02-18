@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   padding: 20px 40px;
-
+  background-color: rgb(50, 32, 19);
   .header-list {
     display: flex;
     justify-content: center;
@@ -17,12 +17,12 @@ export const StyledHeader = styled.header`
     text-decoration: none;
     margin-right: 20px;
     border-radius: 10px;
-
+    background-color: blanchedalmond;
     transition: all 0.3s;
 
     &.active {
       border: 1px solid white;
-      background-color: #3470ff;
+      background-color: black;
       color: white;
       border-radius: 10px;
     }

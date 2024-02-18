@@ -7,4 +7,20 @@ export const HomeWrap = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    color: white;
+  }
+
+  .hero {
+    font-size: 42px;
+  }
+
+  .hero-2 {
+    font-weight: 400;
+  }
 `;

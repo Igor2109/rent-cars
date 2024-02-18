@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ModalButtonRentalCar from "../../components/ModalButtonRentalCar/ModalButtonRentalCar";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCars } from "../../redux/carSlice.selector";
 import { fetchCars } from "../../redux/carSlice";
@@ -35,11 +34,11 @@ const CatalogPage = () => {
         {filteredCars?.map((car) => {
           return <Card key={car.id} {...car} />;
         })}
+
+        <button className="load-btn" type="button" onClick={handleLoadMore}>
+          Load more
+        </button>
       </CatalogWrapper>
-      <button type="button" onClick={handleLoadMore}>
-        Load More
-      </button>
-      <ModalButtonRentalCar />
     </div>
   );
 };
