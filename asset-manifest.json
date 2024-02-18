@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/rent-cars/static/css/main.f1b20760.css",
-    "main.js": "/rent-cars/static/js/main.29746a76.js",
+    "main.js": "/rent-cars/static/js/main.a114aa66.js",
     "static/js/453.86a7eb67.chunk.js": "/rent-cars/static/js/453.86a7eb67.chunk.js",
+    "static/media/1701840650_sportishka-com-p-avtomobil-na-chernom-fone-oboi-40.jpg": "/rent-cars/static/media/1701840650_sportishka-com-p-avtomobil-na-chernom-fone-oboi-40.c2324fb756be4acdf818.jpg",
     "static/media/heartNormal.svg": "/rent-cars/static/media/heartNormal.e60e9d51bfce2cac8799df1592755d00.svg",
     "static/media/heartActive.svg": "/rent-cars/static/media/heartActive.97847e9195943f61800c97807e735d4f.svg",
     "index.html": "/rent-cars/index.html",
     "main.f1b20760.css.map": "/rent-cars/static/css/main.f1b20760.css.map",
-    "main.29746a76.js.map": "/rent-cars/static/js/main.29746a76.js.map",
+    "main.a114aa66.js.map": "/rent-cars/static/js/main.a114aa66.js.map",
     "453.86a7eb67.chunk.js.map": "/rent-cars/static/js/453.86a7eb67.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1b20760.css",
-    "static/js/main.29746a76.js"
+    "static/js/main.a114aa66.js"
   ]
 }
