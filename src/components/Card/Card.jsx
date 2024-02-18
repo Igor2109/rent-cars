@@ -6,6 +6,8 @@ import { ReactComponent as IconHeartActive } from "../../assets/Icons/heartActiv
 import { useDispatch, useSelector } from "react-redux";
 import { selectFavCarsIds } from "../../redux/carSlice.selector";
 import { toggleFav } from "../../redux/carSlice";
+import Modal from "../ModalRental/ModalRental";
+import Details from "../Details/Details";
 
 const Card = ({
   id,
@@ -67,32 +69,28 @@ const Card = ({
       <button type="button" className="learnBtn" onClick={toggleModal}>
         <p>Learn more</p>
       </button>
-      {/* {showModal && (
-        <Modal
-          onClose={toggleModal}
-          renderContent={(onClose) => (
-            <CarDetail
-              id={id}
-              year={year}
-              make={make}
-              model={model}
-              type={type}
-              img={img}
-              description={description}
-              fuelConsumption={fuelConsumption}
-              engineSize={engineSize}
-              accessories={accessories}
-              functionalities={functionalities}
-              rentalPrice={rentalPrice}
-              rentalCompany={rentalCompany}
-              address={address}
-              rentalConditions={rentalConditions}
-              mileage={mileage}
-              onClose={onClose}
-            />
-          )}
-        />
-      )} */}
+      {showModal && (
+        <Modal closeModal={toggleModal}>
+          <Details
+            id={id}
+            year={year}
+            make={make}
+            model={model}
+            type={type}
+            img={img}
+            description={description}
+            fuelConsumption={fuelConsumption}
+            engineSize={engineSize}
+            accessories={accessories}
+            functionalities={functionalities}
+            rentalPrice={rentalPrice}
+            rentalCompany={rentalCompany}
+            address={address}
+            rentalConditions={rentalConditions}
+            mileage={mileage}
+          />
+        </Modal>
+      )}
     </StyledCard>
   );
 };
